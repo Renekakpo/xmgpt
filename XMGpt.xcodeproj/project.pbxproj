@@ -10,6 +10,7 @@
 		FA5D81C82D9AC44B0061B699 /* Secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FA5D81C72D9AC44B0061B699 /* Secrets.xcconfig */; };
 		FA9946D12D99BF6F00588D46 /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = FA9946D02D99BF6F00588D46 /* GoogleGenerativeAI */; };
 		FA9946DA2D9A0FAF00588D46 /* Secrets.example.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FA9946D92D9A0FAA00588D46 /* Secrets.example.xcconfig */; };
+		FAD561222D9C26C900C325A9 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = FAD561212D9C26C900C325A9 /* MarkdownUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA9946D12D99BF6F00588D46 /* GoogleGenerativeAI in Frameworks */,
+				FAD561222D9C26C900C325A9 /* MarkdownUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +157,7 @@
 			name = XMGpt;
 			packageProductDependencies = (
 				FA9946D02D99BF6F00588D46 /* GoogleGenerativeAI */,
+				FAD561212D9C26C900C325A9 /* MarkdownUI */,
 			);
 			productName = XMGpt;
 			productReference = FADC4B442D98240100BA4510 /* XMGpt.app */;
@@ -240,6 +243,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				FA9946CD2D99BDCF00588D46 /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
+				FAD561202D9C268000C325A9 /* XCRemoteSwiftPackageReference "MarkdownUI" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FADC4B452D98240100BA4510 /* Products */;
@@ -626,6 +630,14 @@
 				minimumVersion = 0.5.6;
 			};
 		};
+		FAD561202D9C268000C325A9 /* XCRemoteSwiftPackageReference "MarkdownUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/MarkdownUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -633,6 +645,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FA9946CD2D99BDCF00588D46 /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
 			productName = GoogleGenerativeAI;
+		};
+		FAD561212D9C26C900C325A9 /* MarkdownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAD561202D9C268000C325A9 /* XCRemoteSwiftPackageReference "MarkdownUI" */;
+			productName = MarkdownUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

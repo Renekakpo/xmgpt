@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MarkdownUI
 
 struct ChatBubble: View {
     let text: String
@@ -15,23 +16,16 @@ struct ChatBubble: View {
         HStack {
             if isUser { Spacer() }
             
-            renderMarkdown(text)
+            Markdown(text)
                 .padding()
                 .background(isUser ? Color.blue : Color.gray.opacity(0.2))
                 .foregroundColor(isUser ? .white : .black)
                 .cornerRadius(15)
-                .frame(maxWidth: 300, alignment: isUser ? .trailing : .leading)
+                .frame(maxWidth: .infinity, alignment: isUser ? .trailing : .leading)
+                .fixedSize(horizontal: false, vertical: true)
                 .padding(.horizontal, 5)
             
             if !isUser { Spacer() }
-        }
-    }
-    
-    func renderMarkdown(_ text: String) -> Text {
-        if let attributedString = try? AttributedString(markdown: text) {
-            return Text(attributedString)
-        } else {
-            return Text(text) // Fallback for unsupported formatting
         }
     }
 }

@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA5D81C82D9AC44B0061B699 /* Secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FA5D81C72D9AC44B0061B699 /* Secrets.xcconfig */; };
+		FA9946D12D99BF6F00588D46 /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = FA9946D02D99BF6F00588D46 /* GoogleGenerativeAI */; };
+		FA9946DA2D9A0FAF00588D46 /* Secrets.example.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FA9946D92D9A0FAA00588D46 /* Secrets.example.xcconfig */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FADC4B552D98240400BA4510 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FADC4B3C2D98240100BA4510 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FADC4B432D98240100BA4510;
+			remoteInfo = XMGpt;
+		};
+		FADC4B5F2D98240400BA4510 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FADC4B3C2D98240100BA4510 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FADC4B432D98240100BA4510;
+			remoteInfo = XMGpt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA5D81C72D9AC44B0061B699 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
+		FA9946D92D9A0FAA00588D46 /* Secrets.example.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.example.xcconfig; sourceTree = "<group>"; };
+		FADC4B442D98240100BA4510 /* XMGpt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMGpt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADC4B542D98240400BA4510 /* XMGptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XMGptTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADC4B5E2D98240400BA4510 /* XMGptUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XMGptUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		FA5D81CC2D9ACB590061B699 /* Exceptions for "XMGpt" folder in "XMGpt" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = FADC4B432D98240100BA4510 /* XMGpt */;
+		};
+		FA5D81D62D9B0F3B0061B699 /* Exceptions for "XMGptTests" folder in "XMGpt" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Mocks/MockChatRepository.swift,
+			);
+			target = FADC4B432D98240100BA4510 /* XMGpt */;
+		};
+		FA5D81D72D9B0F3B0061B699 /* Exceptions for "XMGptTests" folder in "XMGptTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Mocks/MockChatRepository.swift,
+			);
+			target = FADC4B532D98240400BA4510 /* XMGptTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		FADC4B462D98240100BA4510 /* XMGpt */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				FA5D81CC2D9ACB590061B699 /* Exceptions for "XMGpt" folder in "XMGpt" target */,
+			);
+			path = XMGpt;
+			sourceTree = "<group>";
+		};
+		FADC4B572D98240400BA4510 /* XMGptTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				FA5D81D62D9B0F3B0061B699 /* Exceptions for "XMGptTests" folder in "XMGpt" target */,
+				FA5D81D72D9B0F3B0061B699 /* Exceptions for "XMGptTests" folder in "XMGptTests" target */,
+			);
+			path = XMGptTests;
+			sourceTree = "<group>";
+		};
+		FADC4B612D98240400BA4510 /* XMGptUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = XMGptUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FADC4B412D98240100BA4510 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA9946D12D99BF6F00588D46 /* GoogleGenerativeAI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADC4B512D98240400BA4510 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADC4B5B2D98240400BA4510 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FADC4B3B2D98240100BA4510 = {
+			isa = PBXGroup;
+			children = (
+				FA5D81C72D9AC44B0061B699 /* Secrets.xcconfig */,
+				FA9946D92D9A0FAA00588D46 /* Secrets.example.xcconfig */,
+				FADC4B462D98240100BA4510 /* XMGpt */,
+				FADC4B572D98240400BA4510 /* XMGptTests */,
+				FADC4B612D98240400BA4510 /* XMGptUITests */,
+				FADC4B452D98240100BA4510 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FADC4B452D98240100BA4510 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FADC4B442D98240100BA4510 /* XMGpt.app */,
+				FADC4B542D98240400BA4510 /* XMGptTests.xctest */,
+				FADC4B5E2D98240400BA4510 /* XMGptUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FADC4B432D98240100BA4510 /* XMGpt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FADC4B682D98240400BA4510 /* Build configuration list for PBXNativeTarget "XMGpt" */;
+			buildPhases = (
+				FADC4B402D98240100BA4510 /* Sources */,
+				FADC4B412D98240100BA4510 /* Frameworks */,
+				FADC4B422D98240100BA4510 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				FADC4B462D98240100BA4510 /* XMGpt */,
+			);
+			name = XMGpt;
+			packageProductDependencies = (
+				FA9946D02D99BF6F00588D46 /* GoogleGenerativeAI */,
+			);
+			productName = XMGpt;
+			productReference = FADC4B442D98240100BA4510 /* XMGpt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FADC4B532D98240400BA4510 /* XMGptTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FADC4B6B2D98240400BA4510 /* Build configuration list for PBXNativeTarget "XMGptTests" */;
+			buildPhases = (
+				FADC4B502D98240400BA4510 /* Sources */,
+				FADC4B512D98240400BA4510 /* Frameworks */,
+				FADC4B522D98240400BA4510 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FADC4B562D98240400BA4510 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FADC4B572D98240400BA4510 /* XMGptTests */,
+			);
+			name = XMGptTests;
+			packageProductDependencies = (
+			);
+			productName = XMGptTests;
+			productReference = FADC4B542D98240400BA4510 /* XMGptTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FADC4B5D2D98240400BA4510 /* XMGptUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FADC4B6E2D98240400BA4510 /* Build configuration list for PBXNativeTarget "XMGptUITests" */;
+			buildPhases = (
+				FADC4B5A2D98240400BA4510 /* Sources */,
+				FADC4B5B2D98240400BA4510 /* Frameworks */,
+				FADC4B5C2D98240400BA4510 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FADC4B602D98240400BA4510 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FADC4B612D98240400BA4510 /* XMGptUITests */,
+			);
+			name = XMGptUITests;
+			packageProductDependencies = (
+			);
+			productName = XMGptUITests;
+			productReference = FADC4B5E2D98240400BA4510 /* XMGptUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FADC4B3C2D98240100BA4510 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					FADC4B432D98240100BA4510 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					FADC4B532D98240400BA4510 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = FADC4B432D98240100BA4510;
+					};
+					FADC4B5D2D98240400BA4510 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = FADC4B432D98240100BA4510;
+					};
+				};
+			};
+			buildConfigurationList = FADC4B3F2D98240100BA4510 /* Build configuration list for PBXProject "XMGpt" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FADC4B3B2D98240100BA4510;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				FA9946CD2D99BDCF00588D46 /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = FADC4B452D98240100BA4510 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FADC4B432D98240100BA4510 /* XMGpt */,
+				FADC4B532D98240400BA4510 /* XMGptTests */,
+				FADC4B5D2D98240400BA4510 /* XMGptUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FADC4B422D98240100BA4510 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA5D81C82D9AC44B0061B699 /* Secrets.xcconfig in Resources */,
+				FA9946DA2D9A0FAF00588D46 /* Secrets.example.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADC4B522D98240400BA4510 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADC4B5C2D98240400BA4510 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FADC4B402D98240100BA4510 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADC4B502D98240400BA4510 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADC4B5A2D98240400BA4510 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FADC4B562D98240400BA4510 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FADC4B432D98240100BA4510 /* XMGpt */;
+			targetProxy = FADC4B552D98240400BA4510 /* PBXContainerItemProxy */;
+		};
+		FADC4B602D98240400BA4510 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FADC4B432D98240100BA4510 /* XMGpt */;
+			targetProxy = FADC4B5F2D98240400BA4510 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FADC4B662D98240400BA4510 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA5D81C72D9AC44B0061B699 /* Secrets.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GEMINI_API_KEY = "$(GEMINI_API_KEY)";
+				INFOPLIST_PREPROCESS = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FADC4B672D98240400BA4510 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA5D81C72D9AC44B0061B699 /* Secrets.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GEMINI_API_KEY = "$(GEMINI_API_KEY)";
+				INFOPLIST_PREPROCESS = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FADC4B692D98240400BA4510 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA5D81C72D9AC44B0061B699 /* Secrets.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"XMGpt/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GEMINI_API_KEY = "$(GEMINI_API_KEY)";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = XMGpt/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = name.renekakpo.XMGpt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FADC4B6A2D98240400BA4510 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA5D81C72D9AC44B0061B699 /* Secrets.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"XMGpt/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GEMINI_API_KEY = "$(GEMINI_API_KEY)";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = XMGpt/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = name.renekakpo.XMGpt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FADC4B6C2D98240400BA4510 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA5D81C72D9AC44B0061B699 /* Secrets.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = name.renekakpo.XMGptTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XMGpt.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/XMGpt";
+			};
+			name = Debug;
+		};
+		FADC4B6D2D98240400BA4510 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA5D81C72D9AC44B0061B699 /* Secrets.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = name.renekakpo.XMGptTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XMGpt.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/XMGpt";
+			};
+			name = Release;
+		};
+		FADC4B6F2D98240400BA4510 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA5D81C72D9AC44B0061B699 /* Secrets.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = name.renekakpo.XMGptUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = XMGpt;
+			};
+			name = Debug;
+		};
+		FADC4B702D98240400BA4510 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA5D81C72D9AC44B0061B699 /* Secrets.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = name.renekakpo.XMGptUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = XMGpt;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FADC4B3F2D98240100BA4510 /* Build configuration list for PBXProject "XMGpt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADC4B662D98240400BA4510 /* Debug */,
+				FADC4B672D98240400BA4510 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FADC4B682D98240400BA4510 /* Build configuration list for PBXNativeTarget "XMGpt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADC4B692D98240400BA4510 /* Debug */,
+				FADC4B6A2D98240400BA4510 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FADC4B6B2D98240400BA4510 /* Build configuration list for PBXNativeTarget "XMGptTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADC4B6C2D98240400BA4510 /* Debug */,
+				FADC4B6D2D98240400BA4510 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FADC4B6E2D98240400BA4510 /* Build configuration list for PBXNativeTarget "XMGptUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADC4B6F2D98240400BA4510 /* Debug */,
+				FADC4B702D98240400BA4510 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA9946CD2D99BDCF00588D46 /* XCRemoteSwiftPackageReference "generative-ai-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/generative-ai-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA9946D02D99BF6F00588D46 /* GoogleGenerativeAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA9946CD2D99BDCF00588D46 /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
+			productName = GoogleGenerativeAI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FADC4B3C2D98240100BA4510 /* Project object */;
+}

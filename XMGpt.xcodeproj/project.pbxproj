@@ -11,6 +11,7 @@
 		FA9946D12D99BF6F00588D46 /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = FA9946D02D99BF6F00588D46 /* GoogleGenerativeAI */; };
 		FA9946DA2D9A0FAF00588D46 /* Secrets.example.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FA9946D92D9A0FAA00588D46 /* Secrets.example.xcconfig */; };
 		FAD561222D9C26C900C325A9 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = FAD561212D9C26C900C325A9 /* MarkdownUI */; };
+		FAFF84D52D9E8C2F002654E5 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = FAFF84D42D9E8C2F002654E5 /* Swinject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 			files = (
 				FA9946D12D99BF6F00588D46 /* GoogleGenerativeAI in Frameworks */,
 				FAD561222D9C26C900C325A9 /* MarkdownUI in Frameworks */,
+				FAFF84D52D9E8C2F002654E5 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +160,7 @@
 			packageProductDependencies = (
 				FA9946D02D99BF6F00588D46 /* GoogleGenerativeAI */,
 				FAD561212D9C26C900C325A9 /* MarkdownUI */,
+				FAFF84D42D9E8C2F002654E5 /* Swinject */,
 			);
 			productName = XMGpt;
 			productReference = FADC4B442D98240100BA4510 /* XMGpt.app */;
@@ -244,6 +247,7 @@
 			packageReferences = (
 				FA9946CD2D99BDCF00588D46 /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
 				FAD561202D9C268000C325A9 /* XCRemoteSwiftPackageReference "MarkdownUI" */,
+				FAFF84D32D9E8C2F002654E5 /* XCRemoteSwiftPackageReference "Swinject" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FADC4B452D98240100BA4510 /* Products */;
@@ -638,6 +642,14 @@
 				minimumVersion = 2.4.1;
 			};
 		};
+		FAFF84D32D9E8C2F002654E5 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.9.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -650,6 +662,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FAD561202D9C268000C325A9 /* XCRemoteSwiftPackageReference "MarkdownUI" */;
 			productName = MarkdownUI;
+		};
+		FAFF84D42D9E8C2F002654E5 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAFF84D32D9E8C2F002654E5 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

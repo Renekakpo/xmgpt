@@ -16,13 +16,4 @@ struct ChatMessage: Identifiable, Equatable {
     let id = UUID()
     var text: String
     let isUser: Bool
-    
-    /**
-     * Converts the message to a ModelContent type for AI processing.
-     * Returns nil if conversion fails.
-     * Sets role to "user" or "model" based on isUser flag.
-     */
-    var modelContent: ModelContent? {
-        try? ModelContent(role: isUser ? "user" : "model", parts: [text])
-    }
 }

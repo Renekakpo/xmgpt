@@ -30,7 +30,7 @@ class SendChatMessageUseCase {
      *   - history: Conversation history for context
      * - Returns: Async stream that yields partial responses or throws errors
      */
-    func execute(text: String, history: [ModelContent]) async throws -> AsyncThrowingStream<String, Error> {
+    func execute(text: String, history: [ChatMessage]) async throws -> AsyncThrowingStream<String, Error> {
         try await repository.sendMessageStream(text, history: history)
     }
 }

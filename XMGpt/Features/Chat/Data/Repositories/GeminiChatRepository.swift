@@ -28,13 +28,15 @@ class GeminiChatRepository: ChatRepositoryProtocol {
     
     /**
      * Sends a message to Gemini and streams the response incrementally.
+     * Converts response DTOs into domain models (`ChatMessage`).
      * - Parameters:
      *   - text: User's input message
      *   - history: Conversation context for maintaining chat state
      * - Returns: Async stream of response chunks with error handling
      */
-    func sendMessageStream(_ text: String, history: [ModelContent]) async throws -> AsyncThrowingStream<String, Error> {
-        let chat = model.startChat(history: history)
+    func sendMessageStream(_ text: String, history: [ChatMessage]) async throws -> AsyncThrowingStream<String, Error> {
+        let historyDTOs = history.map { ChatMessageDTO.fromDomainModel($0).toModelContent() }.compactMap { $0 }
+        let chat = model.startChat(history: historyDTOs)
         let response = chat.sendMessageStream(text)
         
         // Wrap the response in an AsyncThrowingStream for easier consumption
@@ -44,7 +46,7 @@ class GeminiChatRepository: ChatRepositoryProtocol {
                     // Process each response chunk as it arrives
                     for try await chunk in response {
                         if let text = chunk.text {
-                            continuation.yield(text) // Send each text chunk to the caller
+                            continuation.yield(text) // Convert DTO to Domain Model
                         }
                     }
                     continuation.finish() // Signal successful completion

@@ -15,7 +15,6 @@ import GoogleGenerativeAI
  */
 @MainActor
 class ChatViewModel: ObservableObject {
-    // Comment goes here
     @Published
     var messages: [ChatMessage] = []
     
@@ -25,7 +24,6 @@ class ChatViewModel: ObservableObject {
     @Published
     var error: String?
     
-    // Comment goes here
     private let sendMessageUseCase: SendChatMessageUseCase
     
     /**
@@ -51,10 +49,7 @@ class ChatViewModel: ObservableObject {
         
         do {
             // Get streaming response from use case
-            let stream = try await sendMessageUseCase.execute(
-                text: text,
-                history: messages.map { $0.modelContent! }
-            )
+            let stream = try await sendMessageUseCase.execute(text: text, history: messages)
             
             // Create empty assistant message to fill progressively
             let assistantMessage = ChatMessage(text: "", isUser: false)
@@ -66,7 +61,7 @@ class ChatViewModel: ObservableObject {
                 for char in chunk {
                     if let lastIndex = messages.indices.last {
                         messages[lastIndex].text.append(char)
-                        try await Task.sleep(nanoseconds: 30_000_000) // 50ms delay per character
+                        try await Task.sleep(nanoseconds: 5_000_000) // 5ms delay per character
                     }
                 }
             }

@@ -12,7 +12,7 @@ class MockChatRepository: ChatRepositoryProtocol {
     var responseChunks: [String] = []
     var shouldThrowError = false
     
-    func sendMessageStream(_ text: String, history: [ModelContent]) async throws -> AsyncThrowingStream<String, Error> {
+    func sendMessageStream(_ text: String, history: [ChatMessage]) async throws -> AsyncThrowingStream<String, Error> {
         if shouldThrowError {
             throw NSError(domain: "TestError", code: 1, userInfo: nil)
         }

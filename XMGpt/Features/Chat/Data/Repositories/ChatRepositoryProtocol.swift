@@ -25,5 +25,5 @@ protocol ChatRepositoryProtocol {
      *
      * - Throws: An error if there is an issue with the API request or response processing.
      */
-    func sendMessageStream(_ text: String, history: [ModelContent]) async throws -> AsyncThrowingStream<String, Error>
+    func sendMessageStream(_ text: String, history: [ChatMessage]) async throws -> AsyncThrowingStream<String, Error>
 }
